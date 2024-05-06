@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en" class="h-100">
-    <head th:replace="fragments/header :: head"></head>
+    <head th:replace="~{fragments/header :: header}"></head>
     <body class="d-flex flex-column h-100">
         <header>
-            <nav th:replace="fragments/navbar :: navbar"></nav>
+            <nav th:replace="~{fragments/navbar :: navbar}"></nav>
         </header>
         <main class="flex-shrink-0">
             <div class="container" style="padding-top: 60px;">
                 <div layout:fragment="content"></div>
             </div>
         </main>
-        <footer th:replace="fragments/footer :: footer"></footer>
+        <footer th:replace="~{fragments/footer :: footer}"></footer>
         <script th:src="@{/webjars/bootstrap/dist/js/bootstrap.min.js}"></script>
     </body>
 </html>
