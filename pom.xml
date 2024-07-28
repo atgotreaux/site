@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
+		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gotreaux</groupId>
@@ -14,7 +14,7 @@
 	<name>site</name>
 	<description>Personal website at gotreaux.com</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>22</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -64,8 +64,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
 				<configuration>
-					<source>21</source>
-					<target>21</target>
+					<source>22</source>
+					<target>22</target>
 					<encoding>UTF-8</encoding>
 					<failOnWarning>true</failOnWarning>
 					<compilerArgs>
@@ -76,7 +76,7 @@
 						<path>
 							<groupId>com.google.errorprone</groupId>
 							<artifactId>error_prone_core</artifactId>
-							<version>2.27.1</version>
+							<version>2.29.2</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
@@ -96,12 +96,17 @@
 			<plugin>
 				<groupId>com.github.spotbugs</groupId>
 				<artifactId>spotbugs-maven-plugin</artifactId>
-				<version>4.8.4.0</version>
+				<version>4.8.6.2</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.24.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
-				<version>9.1.0</version>
+				<version>10.0.3</version>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
