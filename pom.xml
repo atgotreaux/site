@@ -28,12 +28,10 @@
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
 			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<version>3.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars</groupId>
-			<artifactId>webjars-locator</artifactId>
-			<version>0.52</version>
+			<artifactId>webjars-locator-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.webjars.npm</groupId>
