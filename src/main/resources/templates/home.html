@@ -1,3 +1,13 @@
-<div layout:decorate="~{layouts/default}" layout:fragment="content">
-    <div>This is home page content</div>
-</div>
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head th:replace="~{fragments/header :: header}"></head>
+    <body class="d-flex h-100 text-center text-white bg-dark">
+        <div class ="d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <main class="px-3 mt-auto mb-auto">
+                <h1>Aaron Gotreaux</h1>
+                <p class="lead">Software developer. Foodie. Productivity nerd. Fledgling fitness freak. Metalhead. Weeb.</p>
+            </main>
+        </div>
+        <script th:src="@{/webjars/bootstrap/dist/js/bootstrap.min.js}"></script>
+    </body>
+</html>
