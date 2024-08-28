@@ -1,0 +1,11 @@
+.home-container {
+    max-width: 42em;
+}
+
+.home-name {
+    color: #e4c063;
+}
+
+.home-description {
+    color: #dcdcdc;
+}
