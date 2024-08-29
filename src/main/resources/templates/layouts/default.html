@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="en" class="h-100">
     <head th:replace="~{fragments/header :: header}"></head>
-    <body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column h-100 bg-dark default-text-color">
         <header>
             <nav th:replace="~{fragments/navbar :: navbar}"></nav>
         </header>
         <main class="flex-shrink-0">
-            <div class="container" style="padding-top: 60px;">
+            <div class="container" style="padding-top: 100px;">
                 <div layout:fragment="content"></div>
             </div>
         </main>
