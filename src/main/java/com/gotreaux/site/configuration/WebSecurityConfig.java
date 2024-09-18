@@ -12,7 +12,10 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.headers(headers -> headers.httpStrictTransportSecurity(hsts -> hsts.preload(true).maxAgeInSeconds(63072000L)))
+        return http.headers(
+                        headers ->
+                                headers.httpStrictTransportSecurity(
+                                        hsts -> hsts.preload(true).maxAgeInSeconds(63072000L)))
                 .authorizeHttpRequests(request -> request.anyRequest().permitAll())
                 .build();
     }
