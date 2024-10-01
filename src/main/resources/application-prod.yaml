@@ -1,3 +1,15 @@
+server:
+  ssl:
+    bundle: "https"
+  port: 8443
 spring:
+  ssl:
+    bundle:
+      pem:
+        https:
+          keystore:
+            certificate: "/etc/letsencrypt/live/gotreaux.com/fullchain.pem"
+            private-key: "/etc/letsencrypt/live/gotreaux.com/privkey.pem"
+          reload-on-update: true
   thymeleaf:
     cache: true
