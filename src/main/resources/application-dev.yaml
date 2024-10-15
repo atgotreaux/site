@@ -1,3 +1,8 @@
+logging:
+  file:
+    path: logs
+  level:
+    web: DEBUG
 spring:
   thymeleaf:
     cache: false
