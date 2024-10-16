@@ -1,8 +1,6 @@
 logging:
   file:
     path: "${LOG_FILE_PATH}"
-  level:
-    web: INFO
 server:
   ssl:
     bundle: "https"
