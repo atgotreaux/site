@@ -13,7 +13,7 @@ This project is powered by [**Spring Boot**](https://spring.io/projects/spring-b
 ## Requirements
 
 * [**Maven 3.9.10+**](https://maven.apache.org/download.cgi)
-* [**Java 24**](https://jdk.java.net/24/)
+* [**Java 25**](https://jdk.java.net/25/)
 
 ## Installation
 
